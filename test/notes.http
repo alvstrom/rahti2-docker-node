@@ -1,0 +1,28 @@
+@apiurl = http://localhost:8080/notes
+
+###
+
+GET {{apiurl}}
+
+###
+
+POST {{apiurl}}
+
+Content-Type: application/json
+
+
+{
+  "text": "Hello from REST Client!"
+}
+###
+
+PATCH {{apiurl}}/1
+Content-Type: application/json
+###
+
+
+
+
+DELETE {{apiurl}}/1
+### 
+
