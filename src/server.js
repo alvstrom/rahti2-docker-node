@@ -16,9 +16,5 @@ const notesRouter = require("./routes/notes");
 app.use("/notes", notesRouter);
 
 app.listen(PORT, () => {
-  try {
-    console.log(`Running on http://localhost:${PORT}`);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
+  console.log(`Server running on port ${PORT}`);
 });
